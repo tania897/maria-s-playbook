@@ -3,3 +3,7 @@
   hosts: saba
   gather_facts: no
   tasks: 
+    - name: adding a file
+      file: 
+        path: /tmp/maria-playbook
+        state: touch
